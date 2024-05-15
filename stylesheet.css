@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+
+.container {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.main-img {
+    width: 50%;
+    /*一個上のクラスを１００％にしてやる形もあった。*/
+    height: 700px;
+    object-fit: cover;
+    /* vertical-align: bottom; */
+}
+
+.main-txt {
+
+    padding: 40px;
+
+}
+
+.food-name {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.food-explanation {
+    font-size: 16px;
+}
+
+.title {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    font-size: 20px;
+    margin: 40px 0 15px 0;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.left,
+.right {
+    display: inline-block;
+}
+
+/* フレキシブルに改行させれる
+ .container .main-text .ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+.ingredients-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px dotted rgb(204, 204, 204);
+}
+
+.ingredients-list span {
+    text-align: right;
+}
+
+.recipe-procedure li {
+    margin-left: 20px;
+    list-style: decimal;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px dotted rgb(204, 204, 204);
+}
+
+.btn-list {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.btn-list a {
+    border: 1px solid rgb(43, 42, 39);
+    padding: 18px 40px;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+.btn {
+    margin: 0 10px;
+}
+
+.sns-btn {
+    margin-bottom: 20px;
+}
+
+
+@media all and (max-width: 834px) {
+    .main-img {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
