@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -59,7 +59,7 @@ a {
 /* フレキシブルに改行させれる
  .container .main-text .ingredient-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrarwafap: wrap;
   } */
 
 .ingredients-list li {
